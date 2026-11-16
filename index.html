@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monashree S V | Information Technology Undergraduate & Aspiring Software Developer</title>
+
+  <!-- SEO & Social Meta -->
+  <meta name="description" content="Personal portfolio of Monashree S V, Information Technology undergraduate at SKCET (CGPA 8.9/10). Aspiring software developer passionate about C++, DSA, web development, and applied AI.">
+  <meta name="keywords" content="Monashree S V, SKCET, Information Technology, Software Developer, C++, Web Development, AI, Machine Learning, Portfolio">
+  <meta property="og:title" content="Monashree S V | Personal Portfolio">
+  <meta property="og:description" content="Curious by nature. Building by learning. Explore projects, academic journey, and technical skills of Monashree S V.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Subtle Background Canvas & Ambient Layer -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="ambient-mesh"></div>
+
+  <!-- Custom Magnetic Cursor (Desktop) -->
+  <div class="custom-cursor-dot"></div>
+  <div class="custom-cursor-ring"></div>
+
+  <!-- Global Toast Notification -->
+  <div class="toast-notice"></div>
+
+  <!-- ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar">
+    <div class="container">
+      <nav class="nav-wrapper">
+        <a href="#hero" class="brand-logo" aria-label="Monashree S V Home">
+          <div class="brand-avatar">M</div>
+          <span>Monashree<span style="color: var(--accent-primary);">.dev</span></span>
+        </a>
+
+        <!-- Desktop Navigation Items -->
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#exploring" class="nav-link">Exploring</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-controls">
+          <!-- 3-State Theme Picker (Obsidian, Porcelain, Emerald Slate) -->
+          <div class="theme-picker" title="Select Theme: Dark, Light, or Emerald">
+            <button class="theme-pill-btn active" data-theme-val="dark" title="Obsidian Dark" aria-label="Dark Theme">🌙</button>
+            <button class="theme-pill-btn" data-theme-val="light" title="Porcelain Light" aria-label="Light Theme">☀️</button>
+            <button class="theme-pill-btn" data-theme-val="emerald" title="Emerald Slate" aria-label="Emerald Slate Theme">🌿</button>
+          </div>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button class="mobile-toggle-btn" aria-label="Toggle navigation menu">☰</button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu-drawer">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#education" class="nav-link">Education</a>
+      <a href="#exploring" class="nav-link">Exploring</a>
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#skills" class="nav-link">Skills</a>
+      <a href="#journey" class="nav-link">Journey</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION
+         ========================================================================== -->
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <!-- Open to Internship Status Pill -->
+            <div class="hero-status-pill">
+              <span class="status-dot"></span>
+              <span>Open to Internship Opportunities</span>
+            </div>
+
+            <div class="hero-name-label">MONASHREE S V</div>
+            <h1 class="hero-headline">Hi, I'm Monashree SV.</h1>
+
+            <p class="hero-intro">
+              I'm an IT undergraduate interested in software development, web technologies and AI-powered solutions. I enjoy turning ideas into practical projects while continuously strengthening my problem-solving skills.
+            </p>
+
+            <!-- Display Tags Required -->
+            <div class="hero-tags-group">
+              <span class="hero-tag-item">Information Technology · SKCET</span>
+              <span class="hero-tag-item">C++ · DSA</span>
+              <span class="hero-tag-item">AI / ML</span>
+              <span class="hero-tag-item">Web Development</span>
+            </div>
+
+            <!-- Two Prominent Buttons -->
+            <div class="hero-cta-buttons">
+              <a href="#work" class="btn-primary">
+                Explore My Work
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+              </a>
+              <a href="#contact" class="btn-secondary">
+                Let's Connect
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </a>
+            </div>
+
+            <!-- Statistics Strip -->
+            <div class="hero-stats-strip">
+              <div class="stat-box">
+                <div class="stat-val">8.9 <span>CGPA</span></div>
+                <div class="stat-desc">Academic CGPA / 10</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-val">2029</div>
+                <div class="stat-desc">Graduation Year</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-val">04</div>
+                <div class="stat-desc">Projects Built</div>
+              </div>
+              <div class="stat-box">
+                <div class="stat-val">02</div>
+                <div class="stat-desc">Internships Completed</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Creative Visual: Ideas ↔ Code ↔ Interfaces -->
+          <div class="hero-visual-card">
+            <div class="visual-card-header">
+              <span class="visual-badge">INTERACTIVE VISUALIZER</span>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">Ideas · Code · Interfaces</span>
+            </div>
+            <canvas id="triad-canvas"></canvas>
+            <div class="visual-caption">Click or hover nodes to explore the connection flow</div>
+          </div>
+        </div>
+
+        <!-- Scrolling Indicator -->
+        <div class="scroll-indicator-wrap">
+          <a href="#about" class="scroll-indicator-link" aria-label="Scroll down to About section">
+            <div class="mouse-icon">
+              <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         ABOUT ME SECTION
+         ========================================================================== -->
+    <section id="about" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Monashree</span>
+          <h2 class="section-title">Curious by nature. Building by learning.</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-prose">
+            <p>
+              I'm Monashree S V, an Information Technology undergraduate at Sri Krishna College of Engineering and Technology (SKCET), Coimbatore.
+            </p>
+            <p>
+              I'm interested in becoming a software developer and enjoy learning by building. Working on collaborative projects has helped me explore how technology, teamwork and creative thinking can come together to address real problems.
+            </p>
+            <p>
+              Right now, I'm strengthening my foundations in C++, programming logic and web development, while exploring AI-driven applications.
+            </p>
+            <p>
+              My goal is simple: keep learning, keep building, and turn every project into an opportunity to grow.
+            </p>
+          </div>
+
+          <!-- Personal Information Cards Grid -->
+          <div class="personal-info-grid">
+            <div class="info-card">
+              <div class="info-label">Degree</div>
+              <div class="info-val">B.Tech – Information Technology</div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-label">Institution</div>
+              <div class="info-val">SKCET, Coimbatore</div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-label">Location</div>
+              <div class="info-val">Salem, Tamil Nadu, India</div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-label">Academic CGPA</div>
+              <div class="info-val">8.9 / 10</div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-label">Graduation</div>
+              <div class="info-val">Expected 2029</div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-label">Languages</div>
+              <div class="info-val">English and Tamil</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EDUCATION SECTION
+         ========================================================================== -->
+    <section id="education" class="section">
+      <div class="container">
+        <div class="section-header" style="text-align: center; max-width: 700px; margin-left: auto; margin-right: auto;">
+          <span class="section-tag">Academic Timeline</span>
+          <h2 class="section-title">Education & Milestones</h2>
+          <p class="section-subtitle">A strong foundation in computer science and science leading into undergraduate engineering.</p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- 1. B.Tech -->
+          <div class="edu-card">
+            <div class="edu-period-col">
+              <span class="edu-year">2025 – 2029</span>
+              <span class="edu-location">Coimbatore</span>
+              <div class="edu-score-pill">CGPA: 8.9 / 10</div>
+            </div>
+            <div>
+              <h3 class="edu-degree">B.Tech in Information Technology</h3>
+              <div class="edu-institution">Sri Krishna College of Engineering and Technology</div>
+              <p class="edu-desc">
+                Pursuing an undergraduate degree in IT, building a foundation in programming, software development and computing concepts while applying what I learn through projects and technical activities.
+              </p>
+              <div class="edu-topics-label">Key Topics & Areas:</div>
+              <div class="edu-topics-pills">
+                <span class="topic-pill">Programming</span>
+                <span class="topic-pill">Data Structures</span>
+                <span class="topic-pill">OOP</span>
+                <span class="topic-pill">DBMS</span>
+                <span class="topic-pill">Web Development</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Class XII -->
+          <div class="edu-card">
+            <div class="edu-period-col">
+              <span class="edu-year">2023 – 2024</span>
+              <span class="edu-location">Salem</span>
+              <div class="edu-score-pill">90.17% · 541 / 600</div>
+            </div>
+            <div>
+              <h3 class="edu-degree">Higher Secondary Education – Class XII</h3>
+              <div class="edu-institution">St. Mary's Higher Secondary School · Salem</div>
+              <p class="edu-desc">
+                Completed Class XII with 541 marks out of 600, building the academic foundation that led me to pursue Information Technology at the undergraduate level.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3. Class X -->
+          <div class="edu-card">
+            <div class="edu-period-col">
+              <span class="edu-year">2021 – 2022</span>
+              <span class="edu-location">Salem</span>
+              <div class="edu-score-pill">89.40% · 447 / 500</div>
+            </div>
+            <div>
+              <h3 class="edu-degree">Secondary School Education – Class X</h3>
+              <div class="edu-institution">St. Mary's Higher Secondary School · Salem</div>
+              <p class="edu-desc">
+                Completed Class X with 447 marks out of 500, establishing a strong base for continued learning and higher secondary education.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         WHAT I'M EXPLORING
+         ========================================================================== -->
+    <section id="exploring" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Continuous Growth</span>
+          <h2 class="section-title">What I'm Exploring</h2>
+          <p class="section-subtitle">Current areas of focused practice, learning, and technical exploration.</p>
+        </div>
+
+        <div class="exploring-grid">
+          <!-- Card 1: DSA -->
+          <div class="exploring-card">
+            <div class="exploring-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+            </div>
+            <h3 class="exploring-title">Data Structures & Algorithms</h3>
+            <p class="exploring-desc">
+              Building stronger programming logic through C++ fundamentals and problem-solving practice.
+            </p>
+            <div class="exploring-tech-box">
+              <span>Technologies:</span>
+              <strong>C++, DSA</strong>
+            </div>
+          </div>
+
+          <!-- Card 2: Web Dev -->
+          <div class="exploring-card">
+            <div class="exploring-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+            </div>
+            <h3 class="exploring-title">Web Development</h3>
+            <p class="exploring-desc">
+              Developing frontend foundations and learning how web applications are structured.
+            </p>
+            <div class="exploring-tech-box">
+              <span>Technologies:</span>
+              <strong>HTML, CSS, JavaScript</strong>
+            </div>
+          </div>
+
+          <!-- Card 3: AI -->
+          <div class="exploring-card">
+            <div class="exploring-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M12 2v3m0 14v3M2 12h3m14 0h3"></path><path d="M4.93 4.93l2.12 2.12m9.9 9.9l2.12 2.12M4.93 19.07l2.12-2.12m9.9-9.9l2.12-2.12"></path></svg>
+            </div>
+            <h3 class="exploring-title">Artificial Intelligence</h3>
+            <p class="exploring-desc">
+              Exploring how AI and machine learning can help solve practical, real-world problems.
+            </p>
+            <div class="exploring-tech-box">
+              <span>Technologies:</span>
+              <strong>Python, AI / ML</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SELECTED PROJECTS SECTION
+         ========================================================================== -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Work</span>
+          <h2 class="section-title">Projects with a purpose.</h2>
+          <p class="section-subtitle">Real problems addressed through software design, API integrations, and practical implementations.</p>
+        </div>
+
+        <div class="projects-editorial-list">
+          <!-- PROJECT 01 – SAHAAYA GRID -->
+          <article class="project-editorial-card">
+            <div>
+              <div class="proj-top-meta">
+                <span class="proj-number">PROJECT 01</span>
+                <span class="proj-category-badge">Smart Safety</span>
+              </div>
+              <h3 class="proj-title">SahaayaGrid</h3>
+              <p class="proj-desc">
+                A smart crowd safety and emergency response concept designed for crowded venues. QR-based reporting helps identify a venue zone and route alerts to a response team, supporting faster coordination.
+              </p>
+
+              <div class="proj-highlights-grid">
+                <div class="proj-highlight-tile">
+                  <div class="highlight-label">Focus</div>
+                  <div class="highlight-val">Emergency reporting & micro-dispatch</div>
+                </div>
+                <div class="proj-highlight-tile">
+                  <div class="highlight-label">Project Type</div>
+                  <div class="highlight-val">Team Project</div>
+                </div>
+              </div>
+
+              <div class="proj-tech-row">
+                <span class="proj-tech-pill">React Native</span>
+                <span class="proj-tech-pill">Expo</span>
+                <span class="proj-tech-pill">Location Services</span>
+              </div>
+
+              <div class="proj-actions">
+                <a href="https://github.com/monashreesv-star/Civic-Connect" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  View Source
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Representation / Mockup -->
+            <div class="proj-visual-column">
+              <div class="mockup-bar">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-left: auto;">sahaayagrid.app</span>
+              </div>
+              <div class="mockup-screen-content">
+                <div class="mockup-title">⚡ QR Incident Dispatch Flow</div>
+                <div class="mockup-schema-box">
+                  [Venue QR Scan] ➔ [Zone Identified]<br>
+                  ➔ [Live Proximity Mesh Alert]<br>
+                  ➔ [Volunteer Dispatch & Routing]
+                </div>
+                <div style="font-size: 0.82rem; color: var(--text-muted);">
+                  Status: <strong>Zero-Install Web Beacon Architecture</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 02 – AI-POWERED HEALTHCARE SUPPLY CHAIN -->
+          <article class="project-editorial-card">
+            <div>
+              <div class="proj-top-meta">
+                <span class="proj-number">PROJECT 02</span>
+                <span class="proj-category-badge">Healthcare AI</span>
+              </div>
+              <h3 class="proj-title">AI-Powered Healthcare Supply Chain</h3>
+              <p class="proj-desc">
+                An AI-enabled healthcare supply chain management solution built to explore smarter coordination and data-driven workflows in healthcare operations.
+              </p>
+
+              <div class="proj-highlights-grid">
+                <div class="proj-highlight-tile">
+                  <div class="highlight-label">Focus</div>
+                  <div class="highlight-val">Healthcare Operations</div>
+                </div>
+                <div class="proj-highlight-tile">
+                  <div class="highlight-label">AI Integration</div>
+                  <div class="highlight-val">Google Gemini API</div>
+                </div>
+              </div>
+
+              <div class="proj-tech-row">
+                <span class="proj-tech-pill">React</span>
+                <span class="proj-tech-pill">Node.js</span>
+                <span class="proj-tech-pill">PostgreSQL</span>
+                <span class="proj-tech-pill">Gemini API</span>
+                <span class="proj-tech-pill">Google Cloud</span>
+              </div>
+
+              <div class="proj-actions">
+                <a href="https://github.com/monashreesv-star" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  View Source
+                </a>
+                <a href="https://ai-healthcare-care-hub.ai.studio/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live Project
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Representation / Mockup -->
+            <div class="proj-visual-column">
+              <div class="mockup-bar">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-left: auto;">ai.studio/care-hub</span>
+              </div>
+              <div class="mockup-screen-content">
+                <div class="mockup-title">🏥 Intelligent Inventory & Transfer Routing</div>
+                <div class="mockup-schema-box">
+                  [Hospital Cluster Terminal]<br>
+                  ➔ [PostgreSQL Relational Ledger]<br>
+                  ➔ [Gemini Demand Forecaster & Alerts]
+                </div>
+                <div style="font-size: 0.82rem; color: var(--text-muted);">
+                  Deployment: <strong>Google Cloud & React Client</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 03 – WASTE GUARD AI -->
+          <article class="project-editorial-card">
+            <div>
+              <div class="proj-top-meta">
+                <span class="proj-number">PROJECT 03</span>
+                <span class="proj-category-badge">Sustainability</span>
+              </div>
+              <h3 class="proj-title">WasteGuard AI</h3>
+              <p class="proj-desc">
+                A citizen-powered predictive intelligence prototype for Tamil Nadu municipalities. It supports citizen waste reporting, AI-assisted risk analysis, incident tracking, municipal dashboards, hotspot mapping and waste analytics.
+              </p>
+
+              <div class="mockup-simulated-tag" style="margin-bottom: 1.25rem;">
+                * Important: The demo screens use simulated data.
+              </div>
+
+              <div class="proj-highlights-grid">
+                <div class="proj-highlight-tile">
+                  <div class="highlight-label">Focus</div>
+                  <div class="highlight-val">Waste Classification</div>
+                </div>
+                <div class="proj-highlight-tile">
+                  <div class="highlight-label">Application</div>
+                  <div class="highlight-val">Smart Collection Tracking</div>
+                </div>
+              </div>
+
+              <div class="proj-tech-row">
+                <span class="proj-tech-pill">AI-assisted reporting</span>
+                <span class="proj-tech-pill">AI risk analysis</span>
+                <span class="proj-tech-pill">Hotspot mapping</span>
+                <span class="proj-tech-pill">Analytics</span>
+                <span class="proj-tech-pill">Municipal dashboard</span>
+              </div>
+
+              <div class="proj-actions">
+                <a href="https://github.com/monashreesv-star/WasteGuardAI" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  View Source
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Representation / Mockup -->
+            <div class="proj-visual-column">
+              <div class="mockup-bar">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-left: auto;">wasteguard.tn.gov</span>
+              </div>
+              <div class="mockup-screen-content">
+                <div class="mockup-title">🌱 Municipal Hotspot & Fleet Dispatch</div>
+                <div class="mockup-schema-box">
+                  [Citizen Geo-Report] ➔ [Image Feature Extract]<br>
+                  ➔ [AI Risk & Material Classification]<br>
+                  ➔ [Dynamic Municipal Route Alert]
+                </div>
+                <div style="font-size: 0.82rem; color: var(--text-muted);">
+                  Scope: <strong>Predictive Municipal Intelligence</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 04 – UNISERV -->
+          <article class="project-editorial-card">
+            <div>
+              <div class="proj-top-meta">
+                <span class="proj-number">PROJECT 04</span>
+                <span class="proj-category-badge">Cooperative Marketplace</span>
+              </div>
+              <h3 class="proj-title">UniServ – Cooperative Service Marketplace</h3>
+              <p class="proj-desc">
+                A cooperative-focused marketplace concept connecting customers with skilled workers. The project includes Gemini AI job triage, PayPal Sandbox payment authorization, split payouts and a treasury dashboard.
+              </p>
+
+              <div class="proj-highlights-grid">
+                <div class="proj-highlight-tile">
+                  <div class="highlight-label">Focus</div>
+                  <div class="highlight-val">Service Marketplace & Payments</div>
+                </div>
+                <div class="proj-highlight-tile">
+                  <div class="highlight-label">AI Integration</div>
+                  <div class="highlight-val">Gemini AI Job Triage</div>
+                </div>
+              </div>
+
+              <div class="proj-tech-row">
+                <span class="proj-tech-pill">React Native</span>
+                <span class="proj-tech-pill">Expo</span>
+                <span class="proj-tech-pill">Node.js</span>
+                <span class="proj-tech-pill">Express.js</span>
+                <span class="proj-tech-pill">PayPal APIs</span>
+              </div>
+
+              <div class="proj-actions">
+                <a href="https://github.com/monashreesv-star/UniServ" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                  View Source
+                </a>
+                <a href="https://uni-serv.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                  Live Project
+                </a>
+              </div>
+            </div>
+
+            <!-- Visual Representation / Mockup -->
+            <div class="proj-visual-column">
+              <div class="mockup-bar">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--text-muted); margin-left: auto;">uni-serv.vercel.app</span>
+              </div>
+              <div class="mockup-screen-content">
+                <div class="mockup-title">🤝 Cooperative Escrow & Gemini Triage</div>
+                <div class="mockup-schema-box">
+                  [Client Request] ➔ [Gemini Job Triage]<br>
+                  ➔ [PayPal Multi-Party Split Payout]<br>
+                  ➔ [Cooperative Treasury Dashboard]
+                </div>
+                <div style="font-size: 0.82rem; color: var(--text-muted);">
+                  Stack: <strong>React Native, Express, PayPal Sandbox</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         TECHNICAL SKILLS SECTION
+         ========================================================================== -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Competencies</span>
+          <h2 class="section-title">Skills I'm growing.</h2>
+          <p class="section-subtitle">
+            A snapshot of the technologies and concepts I've worked with or am currently learning. No inflated skill ratings—just an honest learning journey.
+          </p>
+        </div>
+
+        <div class="skills-category-grid">
+          <!-- 1. Programming -->
+          <div class="skills-cat-card">
+            <div class="skills-cat-header">
+              <div class="skills-cat-icon">💻</div>
+              <h3 class="skills-cat-name">Programming</h3>
+            </div>
+            <div class="skills-pills-list">
+              <div class="skill-pill-item">
+                <span class="skill-name">C</span>
+                <span class="skill-badge-level core">Core</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">C++</span>
+                <span class="skill-badge-level core">Core Focus</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">Python</span>
+                <span class="skill-badge-level exposure">Project Exposure</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">Java</span>
+                <span class="skill-badge-level core">Core</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-badge-level core">Core</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Web Development -->
+          <div class="skills-cat-card">
+            <div class="skills-cat-header">
+              <div class="skills-cat-icon">🌐</div>
+              <h3 class="skills-cat-name">Web Development</h3>
+            </div>
+            <div class="skills-pills-list">
+              <div class="skill-pill-item">
+                <span class="skill-name">HTML</span>
+                <span class="skill-badge-level core">Core</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">CSS</span>
+                <span class="skill-badge-level core">Core</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">Bootstrap</span>
+                <span class="skill-badge-level exposure">Project Exposure</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-badge-level core">Core</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">React</span>
+                <span class="skill-badge-level learning">Learning</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">Project Exposure</span>
+                <span class="skill-badge-level exposure">Full-Stack Projects</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Tools & Platforms -->
+          <div class="skills-cat-card">
+            <div class="skills-cat-header">
+              <div class="skills-cat-icon">🛠️</div>
+              <h3 class="skills-cat-name">Tools & Platforms</h3>
+            </div>
+            <div class="skills-pills-list">
+              <div class="skill-pill-item">
+                <span class="skill-name">Git</span>
+                <span class="skill-badge-level core">Core</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">GitHub</span>
+                <span class="skill-badge-level core">Core</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">VS Code</span>
+                <span class="skill-badge-level core">Daily Driver</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">MySQL</span>
+                <span class="skill-badge-level exposure">Project Exposure</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">PostgreSQL</span>
+                <span class="skill-badge-level exposure">Project Exposure</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">Google Cloud Run</span>
+                <span class="skill-badge-level exposure">Project Exposure</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Foundations & Interests -->
+          <div class="skills-cat-card">
+            <div class="skills-cat-header">
+              <div class="skills-cat-icon">🧠</div>
+              <h3 class="skills-cat-name">Foundations & Interests</h3>
+            </div>
+            <div class="skills-pills-list">
+              <div class="skill-pill-item">
+                <span class="skill-name">Object-Oriented Programming</span>
+                <span class="skill-badge-level core">Foundation</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">Data Structures & Algorithms</span>
+                <span class="skill-badge-level core">Active Practice</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">Operating Systems</span>
+                <span class="skill-badge-level core">Academic</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">AI / ML</span>
+                <span class="skill-badge-level learning">Active Learning</span>
+              </div>
+              <div class="skill-pill-item">
+                <span class="skill-name">Problem Solving</span>
+                <span class="skill-badge-level core">Continuous</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         EXPERIENCE & MILESTONES SECTION
+         ========================================================================== -->
+    <section id="journey" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Milestones</span>
+          <h2 class="section-title">Experience & Milestones</h2>
+          <p class="section-subtitle">Real-world internships, student ambassadorships, technical workshops, and hackathon events.</p>
+        </div>
+
+        <div class="journey-categories-wrap">
+          <!-- A. INTERNSHIPS -->
+          <div>
+            <h3 class="journey-group-title">
+              <span>💼</span>
+              <span>A. Internships</span>
+            </h3>
+            <div class="journey-cards-grid">
+              <div class="journey-card">
+                <div class="journey-card-top">
+                  <span class="journey-duration">November – December 2026</span>
+                  <span class="journey-status-pill">Remote</span>
+                </div>
+                <h4 class="journey-role-name">Full Stack Development Intern</h4>
+                <div class="journey-org-name">SkillNexis</div>
+                <p class="journey-desc">
+                  Working on practical full-stack development assignments, building and styling responsive web pages with HTML and CSS while gaining experience with frontend development concepts.
+                </p>
+              </div>
+
+              <div class="journey-card">
+                <div class="journey-card-top">
+                  <span class="journey-duration">October 2026</span>
+                  <span class="journey-status-pill">Remote</span>
+                </div>
+                <h4 class="journey-role-name">Machine Learning & AI Intern</h4>
+                <div class="journey-org-name">Tamizhan Skills · RISE Internship Program</div>
+                <p class="journey-desc">
+                  Completed a one-month virtual internship and worked on a Customer Churn Prediction project using Python, NumPy, Pandas, Matplotlib, Seaborn and Scikit-learn.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- B. CAMPUS & COMMUNITY AMBASSADORSHIPS -->
+          <div>
+            <h3 class="journey-group-title">
+              <span>🌟</span>
+              <span>B. Campus & Community Ambassadorships</span>
+            </h3>
+            <div class="journey-cards-grid">
+              <div class="journey-card">
+                <div class="journey-card-top">
+                  <span class="journey-duration">July 2026</span>
+                  <span class="journey-status-pill">Completed</span>
+                </div>
+                <h4 class="journey-role-name">CodeEmy Campus Ambassador</h4>
+                <div class="journey-org-name">CodeEmy</div>
+                <p class="journey-desc">
+                  Completed the campus ambassador tenure in July 2026, representing the platform and sharing learning opportunities with fellow students.
+                </p>
+              </div>
+
+              <div class="journey-card">
+                <div class="journey-card-top">
+                  <span class="journey-duration">2026 – Present</span>
+                  <span class="journey-status-pill" style="color: var(--accent-emerald); border-color: rgba(52, 211, 153, 0.4);">Current</span>
+                </div>
+                <h4 class="journey-role-name">MyGov Campus Ambassador</h4>
+                <div class="journey-org-name">MyGov India</div>
+                <p class="journey-desc">
+                  Currently serving as a Campus Ambassador, engaging with student communities and sharing public participation and civic engagement opportunities.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- C. WORKSHOPS -->
+          <div>
+            <h3 class="journey-group-title">
+              <span>⚡</span>
+              <span>C. Workshops</span>
+            </h3>
+            <div class="journey-cards-grid">
+              <div class="journey-card">
+                <div class="journey-card-top">
+                  <span class="journey-duration">30 October 2026</span>
+                  <span class="journey-status-pill">Hands-on</span>
+                </div>
+                <h4 class="journey-role-name">Vibe Coding Workshop</h4>
+                <div class="journey-org-name">StartupTN × Google for Developers</div>
+                <p class="journey-desc">
+                  Participated in a workshop exploring AI-assisted coding and modern development workflows.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- D. HACKATHONS & TECHNICAL EVENTS -->
+          <div>
+            <h3 class="journey-group-title">
+              <span>🚀</span>
+              <span>D. Hackathons & Technical Events</span>
+            </h3>
+            <div class="journey-cards-grid">
+              <div class="journey-card">
+                <div class="journey-card-top">
+                  <span class="journey-duration">2026</span>
+                  <span class="journey-status-pill">Collaborative</span>
+                </div>
+                <h4 class="journey-role-name">Build with AI – Code for Communities</h4>
+                <div class="journey-org-name">Google Developer Communities</div>
+                <p class="journey-desc">
+                  Collaborated on an AI-powered healthcare supply chain management solution.
+                </p>
+              </div>
+
+              <div class="journey-card">
+                <div class="journey-card-top">
+                  <span class="journey-duration">2026</span>
+                  <span class="journey-status-pill">Team: Innovex</span>
+                </div>
+                <h4 class="journey-role-name">HACK-KERALA – TECHAVAM</h4>
+                <div class="journey-org-name">Regional Hackathon</div>
+                <p class="journey-desc">
+                  Participated in a collaborative hackathon focused on developing and presenting a technology solution.
+                </p>
+              </div>
+
+              <div class="journey-card">
+                <div class="journey-card-top">
+                  <span class="journey-duration">2026</span>
+                  <span class="journey-status-pill">Innovation</span>
+                </div>
+                <h4 class="journey-role-name">Other Technical Events</h4>
+                <div class="journey-org-name">IDEATHON 2026 · CRYPTERA 2026 · Adobe University Hackathon</div>
+                <p class="journey-desc">
+                  Participated in technology, innovation and problem-solving events.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CREATIVE MARQUEE SECTION
+         ========================================================================== -->
+    <div class="marquee-strip" aria-hidden="true">
+      <div class="marquee-track">
+        <span class="marquee-phrase">BUILD WITH PURPOSE <span class="marquee-symbol">✳</span> LEARN BY DOING <span class="marquee-symbol">✳</span> THINK · BUILD · ITERATE <span class="marquee-symbol">✳</span></span>
+        <span class="marquee-phrase">BUILD WITH PURPOSE <span class="marquee-symbol">✳</span> LEARN BY DOING <span class="marquee-symbol">✳</span> THINK · BUILD · ITERATE <span class="marquee-symbol">✳</span></span>
+        <span class="marquee-phrase">BUILD WITH PURPOSE <span class="marquee-symbol">✳</span> LEARN BY DOING <span class="marquee-symbol">✳</span> THINK · BUILD · ITERATE <span class="marquee-symbol">✳</span></span>
+        <span class="marquee-phrase">BUILD WITH PURPOSE <span class="marquee-symbol">✳</span> LEARN BY DOING <span class="marquee-symbol">✳</span> THINK · BUILD · ITERATE <span class="marquee-symbol">✳</span></span>
+      </div>
+      <div class="marquee-track">
+        <span class="marquee-phrase">BUILD WITH PURPOSE <span class="marquee-symbol">✳</span> LEARN BY DOING <span class="marquee-symbol">✳</span> THINK · BUILD · ITERATE <span class="marquee-symbol">✳</span></span>
+        <span class="marquee-phrase">BUILD WITH PURPOSE <span class="marquee-symbol">✳</span> LEARN BY DOING <span class="marquee-symbol">✳</span> THINK · BUILD · ITERATE <span class="marquee-symbol">✳</span></span>
+        <span class="marquee-phrase">BUILD WITH PURPOSE <span class="marquee-symbol">✳</span> LEARN BY DOING <span class="marquee-symbol">✳</span> THINK · BUILD · ITERATE <span class="marquee-symbol">✳</span></span>
+        <span class="marquee-phrase">BUILD WITH PURPOSE <span class="marquee-symbol">✳</span> LEARN BY DOING <span class="marquee-symbol">✳</span> THINK · BUILD · ITERATE <span class="marquee-symbol">✳</span></span>
+      </div>
+    </div>
+
+    <!-- ==========================================================================
+         CONTACT SECTION
+         ========================================================================== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="contact-editorial-card">
+          <div class="contact-info-col">
+            <span class="section-tag">Get in Touch</span>
+            <h3>Let's build something meaningful.</h3>
+            <p>
+              I'm interested in internship opportunities, collaborative projects and conversations about software development and technology. Feel free to reach out.
+            </p>
+
+            <div class="contact-direct-links">
+              <!-- Email link item with Copy button -->
+              <div class="contact-link-item">
+                <div class="contact-icon-box">✉️</div>
+                <div class="contact-link-meta">
+                  <span class="contact-link-label">Direct Email</span>
+                  <a href="mailto:monashreesv@gmail.com" class="contact-link-value">monashreesv@gmail.com</a>
+                </div>
+                <button class="copy-mini-btn copy-email-btn" title="Copy email address">Copy</button>
+              </div>
+
+              <!-- Phone link item -->
+              <div class="contact-link-item">
+                <div class="contact-icon-box">📞</div>
+                <div class="contact-link-meta">
+                  <span class="contact-link-label">Phone</span>
+                  <a href="tel:+916382131343" class="contact-link-value">+91 63821 31343</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Action Buttons -->
+          <div class="contact-actions-grid">
+            <a href="mailto:monashreesv@gmail.com" class="social-action-btn primary">
+              <span>Send Me an Email</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </a>
+
+            <a href="https://www.linkedin.com/in/monashree-s-v-28ms" target="_blank" rel="noopener noreferrer" class="social-action-btn">
+              <span>LinkedIn</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
+
+            <a href="https://github.com/monashreesv-star" target="_blank" rel="noopener noreferrer" class="social-action-btn">
+              <span>GitHub</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+            </a>
+
+            <a href="https://leetcode.com/u/monashreesv/" target="_blank" rel="noopener noreferrer" class="social-action-btn">
+              <span>LeetCode</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 18l6-6-6-6"></path><path d="M8 6l-6 6 6 6"></path></svg>
+            </a>
+
+            <button class="social-action-btn copy-email-btn" style="cursor: pointer; text-align: left; width: 100%;">
+              <span>Copy Email Address</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--accent-primary);">monashreesv@gmail.com</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-copyright">
+        © 2026 MONASHREE S V
+      </div>
+
+      <div class="footer-tagline">
+        THANK YOU FOR STOPPING BY · KEEP BUILDING, KEEP GROWING.
+      </div>
+
+      <button class="back-to-top-btn" aria-label="Back to top">
+        <span>Back to Top</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/sound.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/visualizer.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
